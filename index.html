@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orange Anime</title>
+    <link rel="icon" href="Assets\Logos\logo single.png">
+    <link rel="stylesheet" href="CSSxJS\style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="side-menu-toggle">
+            <label class="fa fa-bars" for="side-menu-toggle" id="side-menu-bar">
+                <span></span>
+            </label>
+            <div class="nav-container" id="nav-container-id">
+
+                <div class="logo-nav" id="logo-nav-id">
+                    <img src="Assets\Logos\My logo-v.png" alt="logo" />
+                </div>
+                <div class="nav-list" id="nav-list-id">
+                    <li id="home-nav-id">
+                        Home
+                    </li>
+                    <li id="about-nav-id">
+                        About
+                    </li>
+                    <li id="anime-nav-id">
+                        Anime
+                    </li>
+                    <li id="news-nav-id">
+                        News
+                    </li>
+                    <li id="event-nav-id">
+                        Event
+                    </li>
+                    <li id="profile-nav-id">
+                        Profile
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="allmain" id="allmain-id">
+            <div class="mid-tier" id="mid-tier-id">
+                <div class="slideshow-container" id="slideshow-container-id">
+                </div>
+            </div>
+            <div class="mid-main" id="mid-main-id">
+                <div class="main-container" id="main-container-id">
+                    <div class="box-a1" id="box-1-id">
+                        <article>
+                            <h1>ABOUT US</h1>
+                            <div class="outter-p">
+                                <p>
+                                    &nbsp; &nbsp; Orange Anime adalah website berita yang membahas seputar hal - hal
+                                    tentang anime,
+                                    manga,
+                                    music, dan event jepang yang ada di Indonesia.
+                                </p>
+                                <p>
+                                    &nbsp; &nbsp; Karena banyaknya penyuka anime di Indonesia maka saya membuat website
+                                    ini. Tujuan website ini dibuat agar mereka(penyuka anime di Indonesia) bisa
+                                    mengetahui
+                                    apa saja update terbaru mengenai dunia
+                                    mereka baik itu dalam hal anime, manga, music, maupun event yang akan datang.
+                                    Moto dari website ini dalah "Terupdate dari berbagai sumber terpercaya" yang berati
+                                    website memiliki konten konten yang sudah sesuai dan terpercaya dari berbagai
+                                    sumber.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box-a2" id="box-2-id">
+                        <div class="content-box">
+                            <div class="heading1-top">
+                                <h1>ANIME</h1>
+                            </div>
+                            <div class="heading2-top">
+                                <h2>Popular This Season</h2>
+                            </div>
+                            <div class="widget-slide-content">
+                                <div class="prev s-arrow" onclick="prevscrl(this)" id="prev-scrl">❮</div>
+                                <div class="items" id="popular-now">
+                                </div>
+                                <div class="next s-arrow" onclick="nextscrl(this)" id="next-scrl">❯</div>
+                            </div>
+                            <br>
+                            <div class="heading2-top upcoming">
+                                <h2>Upcoming Next Season</h2>
+                            </div>
+                            <div class="widget-slide-content">
+                                <div class="prev s-arrow" onclick="prevscrl(this)" id="prev-scrl">❮</div>
+                                <div class="items" id="upcomming-next">
+                                </div>
+                                <div class="next s-arrow m2" onclick="nextscrl(this)" id="next-scrl">❯</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-a3" id="box-3-id">
+                        <div class="heading1-top">
+                            <h1>NEWS UPDATE</h1>
+                        </div>
+                        <div class="grid-container" id="news-update-id">
+                        </div>
+                    </div>
+                    <div class="box-a4" id="box-4-id">
+                        <div class="content-box">
+                            <div class="heading1-top">
+                                <h1>JAPANESE FESTIVAL</h1>
+                            </div>
+                            <div class="grid-container" id="festival-id">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-a3" id="box-3-profile-id">
+                        <div class="heading1-top">
+                            <h1>PROFILE</h1>
+                        </div>
+                        <div class="profile-container">
+                            <div class="profile-picture">
+                                <img src="Assets\Profile\profile.png" alt="">
+                            </div>
+                            <div class="profile-data">
+                                <article>
+                                    <h1>Rayhan Febriyan Saputra</h1>
+                                    <p> &nbsp; &nbsp; Halo.. Saya adalah seorang mahasiswa dengan jurusan Teknik
+                                        Informatika dari
+                                        Universitas Budi Luhur Jakarta, saat ini saya tinggal di jakarta bersama
+                                        keluarga saya. Saya fokus untuk menjadi back-end developer dan terkadang juga
+                                        mencoba menjadi fullstack developer.
+                                        <br>
+                                        &nbsp; &nbsp; Page ini saya buat karena saya juga
+                                        menyukai anime dan budaya Jepang, tetapi tetap cinta budaya dari negara sendiri.
+                                    </p>
+                                </article>
+                                <div class="social-media">
+                                    <div class="social-container">
+                                        <a href="https://github.com/CardinalRPH">
+                                            <i class="fa-brands fa-github social-icon fa-3x"></i>
+                                            <span>
+                                                <h4>CardinalRPH</h4>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="social-container">
+                                        <a
+                                            href="https://mail.google.com/mail/?view=cm&fs=1&to=rayhanfebriyan62@gmail.com&su=Greetings&body=Hello..">
+                                            <i class="fa-solid fa-envelope social-icon fa-3x"></i>
+                                            <span>
+                                                <h4>rayhanfebriyan62@gmail.com</h4>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="social-container">
+                                        <a href="https://www.instagram.com/zero.context_/">
+                                            <i class="fa-brands fa-instagram social-icon fa-3x"></i>
+                                            <span>
+                                                <h4>zero.context_</h4>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-outer" id="aside-outer-id">
+                    <aside>
+                        <div class="aside-container" id="aside-container-id">
+                            <div class="aside-inner" id="aside-inner-id">
+                                <div class="aside-box1 card" id="aside-box1-id">
+                                    <div class="rank-header">
+                                        <h2>Profile</h2>
+                                    </div>
+                                    <div class="profile-min-container">
+                                        <div class="profile-img-side">
+                                            <img src="Assets\Profile\profile.png" alt="">
+                                        </div>
+                                        <div class="profile-data-side">
+                                            <h2>Rayhan Febriyan Saputra</h2>
+                                        </div>
+                                        <div class="profile-more" id="more-details-id">
+                                            <h3>More details</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="aside-box1 card" id="aside-box1-id">
+                                    <div class="rank-header">
+                                        <h2>TOP AIRING ANIME</h2>
+                                    </div>
+                                    <div class="ul-outer">
+                                        <ul id="top-airing-id">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="aside-box1 card" id="aside-box1-id">
+                                    <div class="rank-header">
+                                        <h2>TOP UPCOMING ANIME</h2>
+                                    </div>
+                                    <div class="ul-outer">
+                                        <ul id="top-upcoming-id">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container" id="div-footer-container-id">
+            <div class="footer-icon">
+                <img src="Assets\Logos\My logo-v.png" alt="">
+            </div>
+            <div class="footer-up-text" id="footer-up-text-id">
+                <div class="footer-up" id="footer-up-id">
+                    <i class="fa-solid fa-arrow-up fa-4x"></i>
+                </div>
+                <div class="footer-text">
+                    <h3>
+                        Copyright © 2023 | Orange Anime | Design and Idea by Rayhan Febriyan Saputra for Tugas Akhir
+                        Dicoding | All rights reserved
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="CSSxJS\data.js"></script>
+    <script src="CSSxJS\script.js"></script>
+</body>
+
+</html>
